@@ -11,6 +11,10 @@ def load_library(path)
       e_hash = {e_key[0] => e_key[1]}
     }
   }
+  
+  puts "new_hash[:get_meaning]: #{new_hash[:get_meaning]}"
+  puts "new_hash[:get_emoticon]: #{new_hash[:get_emoticon]}"
+  
 end
 
 def get_japanese_emoticon
