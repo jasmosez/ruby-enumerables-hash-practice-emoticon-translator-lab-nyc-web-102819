@@ -15,6 +15,7 @@ def load_library(path)
   puts "new_hash[:get_meaning]: #{new_hash[:get_meaning]}"
   puts "new_hash[:get_emoticon]: #{new_hash[:get_emoticon]}"
   
+  new_hash
 end
 
 def get_japanese_emoticon
