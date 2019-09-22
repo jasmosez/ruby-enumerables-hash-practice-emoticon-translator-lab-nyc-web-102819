@@ -2,6 +2,7 @@ require 'yaml'
 
 def load_library(path)
   emoticon_library = YAML.load_file(path)
+  puts "emoticon_library.class: #{emoticon_library.class}"
   
   new_hash = {
     :get_meaning => emoticon_library.reduce({}) { |meaning_hash, (meaning_key, ej_array)|
