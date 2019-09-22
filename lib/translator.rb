@@ -16,7 +16,7 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   big_hash = load_library(path)
-  big_hash[:get_emoticon][emoticon]
+  if big_hash[:get_emoticon][emoticon] ? big_hash[:get_emoticon][emoticon] : "Sorry, don't know that emoticon"
 end
 
 def get_english_meaning
