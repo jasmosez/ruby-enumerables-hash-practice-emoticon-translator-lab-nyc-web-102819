@@ -8,7 +8,7 @@ def load_library(path)
       meaning_hash[ej_array[1]] = meaning_key
     }, 
     :get_emoticon => emoticon_library.reduce({}){ |e_hash, (e_key, e_value)|
-      e_hash[e_key[0]] = e_key[1]
+    e_hash
     }
   }
   
