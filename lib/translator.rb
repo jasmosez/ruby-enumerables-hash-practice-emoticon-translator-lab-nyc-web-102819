@@ -6,8 +6,8 @@ def load_library(path)
   new_hash = {
     :get_meaning => emoticon_library.reduce({}) { |m_hash, (m_key, m_value)|
       puts "new_hash[:get_meaning]: #{new_hash[:get_meaning]}"
-      puts "new_hash[:get_meaning]: #{new_hash[:get_meaning]}"
-      puts "new_hash[:get_meaning]: #{new_hash[:get_meaning]}"
+      puts "m_value: #{m_value}"
+      puts "m_key: #{m_key}"
       m_hash[m_value[1]] => m_key
       
     }, 
