@@ -8,7 +8,7 @@ def load_library(path)
       puts "m_value: #{m_value}"
       puts "m_key: #{m_key}"
       m_hash[m_value[1]] = m_key
-      
+      puts "m_hash: #{m_hash}"
     }, 
     :get_emoticon => emoticon_library.reduce({}){ |e_hash, (e_key, e_value)|
       e_hash[e_key[0]] = e_key[1]
