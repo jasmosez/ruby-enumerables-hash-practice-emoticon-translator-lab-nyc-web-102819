@@ -4,11 +4,13 @@ def load_library(path)
   emoticon_library = YAML.load_file(path)
   
   new_hash = {
-    :get_meaning => emoticon_library.reduce({}) { |m_hash, (m_key, m_value)|
-      puts "m_value: #{m_value}"
-      puts "m_key: #{m_key}"
-      m_hash[m_value[1]] = m_key
-      puts "m_hash: #{m_hash}"
+    :get_meaning => emoticon_library.reduce({}) { |meaning_hash, (meaning_key, ej_array)|
+      puts "ej_array: #{ej_array}"
+      puts "meaning_key: #{meaning_key}"
+      puts "meaning_hash pre assign: #{meaning_hash}"
+      meaning_hash[ej_array[1]] = meaning_key
+      puts "meaning_hash POST assign: #{meaning_hash}"
+      
     }, 
     :get_emoticon => emoticon_library.reduce({}){ |e_hash, (e_key, e_value)|
       e_hash[e_key[0]] = e_key[1]
