@@ -5,10 +5,10 @@ def load_library(path)
   
   new_hash = {
     :get_meaning => emoticon_library.reduce({}) { |m_hash, (m_key, m_value)|
-      m_hash = {m_value[1] => m_key}
+      m_hash[m_value[1]] => m_key
     }, 
     :get_emoticon => emoticon_library.reduce({}){ |e_hash, (e_key, e_value)|
-      e_hash = {e_key[0] => e_key[1]}
+      e_hash[e_key[0]] => e_key[1]
     }
   }
   
