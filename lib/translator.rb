@@ -15,10 +15,11 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emoticon)
-  #big_hash = load_library(path)
-  load_library(path)[:get_emoticon][emoticon] ? big_hash[:get_emoticon][emoticon] : "Sorry, that emoticon was not found"
+  big_hash = load_library(path)
+  big_hash[:get_emoticon][emoticon] ? big_hash[:get_emoticon][emoticon] : "Sorry, that emoticon was not found"
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(path, emoticon)
+  big_hash = load_library(path)
+  big_hash[:get_meaning][emoticon] ? big_hash[:get_meaning][emoticon] : "Sorry, that emoticon was not found"
 end
