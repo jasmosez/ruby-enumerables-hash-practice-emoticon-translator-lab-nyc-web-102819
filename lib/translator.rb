@@ -12,6 +12,7 @@ def load_library(path)
     :get_emoticon => emoticon_library.reduce({}){ |emoticon_hash, (meaning_key, ej_array)|
     emoticon_hash[ej_array[0]] = ej_array[0]
     }
+    emoticon_hash
   }
   
   
